@@ -10,7 +10,7 @@ export function toggleAddPost() {
 }
 
 export function toggleEditPost() {
-	return {
-		type: TOGGLE_EDIT_POST,
-	};
+  return {
+    type: TOGGLE_EDIT_POST,
+  };
 }
