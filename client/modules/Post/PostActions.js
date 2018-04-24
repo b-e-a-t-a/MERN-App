@@ -82,16 +82,16 @@ export function editPostRequest(cuid, post) {
   };
 }
 
-export function thumbUpPost(cuid) {
+export function thumbUp(cuid) {
   return {
     type: THUMB_UP,
     cuid,
   };
 }
 
-export function thumbUpPostRequest(cuid) {
+export function thumbUpRequest(cuid) {
   return (dispatch) => {
-    return callApi(`posts/${cuid}`, 'put').then(() => dispatch(thumbUpPost(cuid)));
+    return callApi(`posts/${cuid}`, 'put').then(() => dispatch(thumbUp(cuid)));
   };
 }
 
